@@ -10,9 +10,9 @@
 ```javascript
    const mtUZ = require('mt-uz');
    /**
-    * @param cwd 执行命令的路径, 默认为[项目根路径]/static
+    * @param cwd 执行命令的路径, 即[项目根路径]/static
     * @param onClose  命令构建完成后回调
-    * @param dest  编译后代码输出路径 默认是[项目跟路径]/static/dest
+    * @param dest  编译后代码输出路径 默认是[cwd]/dest
     */
    mtUZ(cwd, onClose, dest );
 ```
