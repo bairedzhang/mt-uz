@@ -26,7 +26,7 @@ const uzBinPath = getBin(uzBinName, __dirname);
 module.exports = function (cwd, onClose, dest) {
     const spawn = child.spawn;
     if (uzBinPath) {
-        const uz = spawn(uzBinPath, ['release', '-pod', dest || 'dest'], {
+        const uz = spawn(uzBinPath, ['release', dest || 'dest'], {
             cwd: cwd
         });
 

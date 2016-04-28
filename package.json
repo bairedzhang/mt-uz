@@ -1,6 +1,6 @@
 {
   "name": "mt-uz",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "invoke uz for mt",
   "scripts": {},
   "repository": {
@@ -12,7 +12,7 @@
   ],
   "author": "bairedzhang",
   "dependencies": {
-    "uz": "^0.1.8"
+    "uz": "^1.0.3"
   },
   "license": "MIT"
 }
