@@ -2,6 +2,7 @@
 const child = require('child_process');
 const path = require('path');
 const fs = require('fs');
+const del = require('del');
 
 function getBin(bin, dir) {
     let binPath = path.join(dir, 'node_modules', '.bin', bin)
@@ -25,7 +26,9 @@ const uzBinPath = getBin(uzBinName, __dirname);
 
 module.exports = function (cwd, onClose, dest) {
     const spawn = child.spawn;
+    const uzTmpPath = process.env.HOME + '/.uz-tmp';
     if (uzBinPath) {
+        del(uzTmpPath + '/**/*', {force: true});
         const uz = spawn(uzBinPath, ['release', dest || 'dest'], {
             cwd: cwd
         });

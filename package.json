@@ -12,7 +12,8 @@
   ],
   "author": "bairedzhang",
   "dependencies": {
-    "uz": "^1.0.4"
+    "del": "^2.2.1",
+    "uz": "^1.2.0"
   },
   "license": "MIT"
 }
